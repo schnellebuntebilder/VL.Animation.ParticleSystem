@@ -11913,6 +11913,223 @@
             <Link Id="KToxRNJifdeMxgaVjD2zWg" Ids="Uy2FcOEFu4jPCXEPQiuIfg,KskSwgMs16HNO5mbq5AfTd" />
           </Patch>
         </Node>
+        <!--
+
+    ************************ SyncConcurrentParticles ************************
+
+-->
+        <Node Name="SyncConcurrentParticles" Category="Animation.ParticleSystem.Emitter" Bounds="654,280" Id="HbMZGIjNN7CPvBdJHSOaVT">
+          <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+            <Choice Kind="ClassDefinition" Name="Class" />
+          </p:NodeReference>
+          <p:Interfaces>
+            <TypeReference LastCategoryFullName="Emitters" LastDependency="Gea.Particles.vl">
+              <Choice Kind="InterfaceTypeFlag" Name="IParticleEmitter" />
+            </TypeReference>
+            <TypeReference LastDependency="Gea.Particles.vl">
+              <Choice Kind="InterfaceTypeFlag" Name="IComponent" />
+            </TypeReference>
+          </p:Interfaces>
+          <Patch Id="LXDjvDQ9ABPLmmLHFQOpGl">
+            <Canvas Id="To4NZfK1cENNkHqhLzWQlF" CanvasType="Group">
+              <ControlPoint Id="CyFuXIKmUseMmddO5VvtMQ" Bounds="390,324" />
+              <Node Bounds="892,179,373,19" Id="NqTxVhfvQ1VQOt71j1fYxf">
+                <p:NodeReference LastCategoryFullName="Primitive.TypeHelpers" LastDependency="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ConstrainTypes" />
+                </p:NodeReference>
+                <Pin Id="RRBgFUcJEtePwgeTiuerux" Name="Input" Kind="InputPin" />
+                <Pin Id="PtdWQYLwSYEOa7HGN68qo8" Name="Input 2" Kind="InputPin" />
+                <Pin Id="Igg3RUUvTYdMw2rCfbmiao" Name="Input 3" Kind="InputPin" />
+                <Pin Id="UL0jIFCrWqXQZZhmJqhOVO" Name="Input 4" Kind="InputPin" />
+              </Node>
+              <ControlPoint Id="Vh9GPuEpxSyP0AQdxqvyvk" Bounds="894,141" />
+              <Pad Id="Effe9GbLR2RNbpVYjbAgV8" SlotId="NhsaUs14YovMYoQlkQyZXv" Bounds="951,74" />
+              <Node Bounds="949,102,80,19" Id="HWw1gsJria9LE37j7mrnd7">
+                <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
+                </p:NodeReference>
+                <Pin Id="UcC0ftEoZ0sLLLWL3dnLK5" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Haycl9umS4aOseZFEGKWlI" Name="Default Value" Kind="InputPin" />
+                <Pin Id="Ae2usndQrl6M7QsXshypDu" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="H2UkJC6bXp1QVsTddrw0Ok" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="949,129,71,26" Id="A0dyVqXIBxwLYFNzfRpQel">
+                <p:NodeReference LastCategoryFullName="Animation.ParticleSystem.Core.IMutableParticle" LastDependency="VL.Animation.ParticleSystem.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="InterfaceTypeFlag" Name="IMutableParticle" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetPos" />
+                </p:NodeReference>
+                <Pin Id="F6lnV4tdCz8QXre8JDqC3h" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GKB8UUKQOB3MEyIE8kwxxs" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="G1ck9c1DGd5QdiLmjJWBjz" Name="Pos" Kind="OutputPin" />
+              </Node>
+              <Pad Id="NnR6asMOOb6Nc64tO9JkJT" SlotId="NhsaUs14YovMYoQlkQyZXv" Bounds="390,353" />
+              <Pad Id="H3Kw9XiNDdWOSh0kz3dNUw" SlotId="NkPAWNC4LT6NbZDiW4I95L" Bounds="534,353" />
+              <ControlPoint Id="CeRWHFPzIfoNFtr07L2KdR" Bounds="447,161" />
+              <Pad Id="PmMRa3CfrWBPFfufMFalMo" SlotId="Svbpa7UoqMYQN8KKqSkZzs" Bounds="1096,74" />
+              <Node Bounds="1094,129,48,26" Id="IcG0vjTLKo1NUfsP3D6igh">
+                <p:NodeReference LastCategoryFullName="VL.Particles.Core.ParticleImmutable" LastDependency="VL.Particles.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetPos" />
+                  <CategoryReference Kind="Category" Name="Particle" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="RHDGCyZjOeNQdqxoP5ydnD" Name="Input" Kind="StateInputPin" />
+                <Pin Id="QC3e2YRfLvnPnHbySGF8gD" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="RXVX2VpifUPQPAUo7HBEH6" Name="Pos" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="1094,102,80,19" Id="HNVTrx3VpPhPwOinwlxWFi">
+                <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
+                </p:NodeReference>
+                <Pin Id="GGhJHH3zKgkLHKbmwCGuhj" Name="Input" Kind="StateInputPin" />
+                <Pin Id="FSUiy55ux10NOzeEhkOWfX" Name="Default Value" Kind="InputPin" />
+                <Pin Id="CTAUE8H0hvKNLq2duOCtqY" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="LzmbfHO7tdrPA5YakEkSoQ" Name="Result" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="ETZWQsHg8N6NVhjmRIVKfP" Bounds="811,271" />
+              <Node Bounds="809,293,96,26" Id="AkkAeBeNCvHQZQyJru8RAT">
+                <p:NodeReference LastCategoryFullName="Core.PSystemContext" LastDependency="VL.Particles.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetClock" />
+                  <CategoryReference Kind="Category" Name="ParticleSystemContext" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="B3bDtgoWYR9PkjeBfwEBxv" Name="Input" Kind="StateInputPin" />
+                <Pin Id="BylfScealI3M4HCdlJN0Gd" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="OHGRJlWxQU0Lmj39YIOry3" Name="Clock" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="809,338,54,26" Id="EKz0dFJvWiBPrf7AyjPlOH">
+                <p:NodeReference LastCategoryFullName="Animation.IClock" LastDependency="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Seconds" />
+                  <CategoryReference Kind="ImmutableInterfaceType" Name="IClock" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="NmKAbRwZaQgPgu6IcOweIb" Name="Input" Kind="StateInputPin" />
+                <Pin Id="EXKhOX5cYAZL87J98OmNTZ" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="809,381,62,19" Id="KIC4mDD3EjkMUXPBC8XLuC">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                </p:NodeReference>
+                <Pin Id="D1IlrLHI3imP3gebdQdMJT" Name="Input" Kind="InputPin" />
+                <Pin Id="V6EhhwIc0VFN78cEOGreIf" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="445,215,92,26" Id="HmcKUQD5E46NCF4Qd6KBE0">
+                <p:NodeReference LastCategoryFullName="Collections.Concurrent.ConcurrentDictionary" LastDependency="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Values" />
+                  <CategoryReference Kind="ClassType" Name="ConcurrentDictionary" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="ChR97uvLiPGPjU5GFrzhPv" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Sz0DWUQXE3fLzDUBrWqAVE" Name="Output" Kind="OutputPin" />
+                <Pin Id="K3cCdnaNHbENIzU718lVkd" Name="Values" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="376,446,175,94" Id="Pm8pORpk9pQO3RUJ0OqHmD">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="UCEEXHjVa3iOsEN9SMGt61" Name="Break" Kind="OutputPin" />
+                <Patch Id="BxLO6qA7jy8NB8pAvFRR7L" ManuallySortedPins="true">
+                  <Patch Id="UfxseiapeBAOBIwPupKUg3" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="Jm0Rej2Db5kOub4Ti0hBtx" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="Jm18amcObX4QatFexf2b5J" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="388,494,149,26" Id="ERoZ75VIrm2QaoBZgc9Ca2">
+                    <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.Collections.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Add" />
+                      <CategoryReference Kind="ClassType" Name="SpreadBuilder" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="R6oKSzcW4AyPgzKjKFNMjl" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="En1VKh7J9lROYiSCtUoFBP" Name="Item" Kind="InputPin" />
+                    <Pin Id="OA13RsPmvCSNt0Vv1QP4eF" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="VyGpMOS4Zb5LUTV84JnKeG" Bounds="534,452" Alignment="Top" />
+              </Node>
+              <Node Bounds="388,398,66,26" Id="Iv0cpAD8muAObcJrFbXJvy">
+                <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Clear" />
+                  <CategoryReference Kind="ClassType" Name="SpreadBuilder" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="AaFQEuXkNfCOH8Tgpxali8" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JY2AMIlt5jIMZ6T4XF57m1" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Canvas>
+            <Patch Id="DKyt6WgOCzQPPj48WsiUvO" Name="Create" />
+            <Patch Id="J5PMnQijglNLuw7cKYGYz4" Name="Update">
+              <Pin Id="FYMOyvQgUNxQGUJkb85unA" Name="Particle Model" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Collections.Concurrent" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="ConcurrentDictionary" />
+                  <p:TypeArguments>
+                    <TypeReference>
+                      <Choice Kind="TypeFlag" Name="GUID" />
+                    </TypeReference>
+                    <TypeReference>
+                      <Choice Kind="TypeFlag" Name="MutableParticle" />
+                      <p:TypeArguments>
+                        <TypeReference>
+                          <Choice Kind="TypeFlag" Name="Vector2" />
+                        </TypeReference>
+                      </p:TypeArguments>
+                    </TypeReference>
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pin>
+            </Patch>
+            <Patch Id="LwmOAxhhl06Me0DgDNDBBZ" Name="Emit" ParticipatingElements="Iv0cpAD8muAObcJrFbXJvy">
+              <Pin Id="RIDLhfKJPopNT6koTcm6tS" Name="Particles" Kind="InputPin" />
+              <Pin Id="BRrQPelUQeVMSQQjARRIR5" Name="PSystem Context" Kind="InputPin" />
+            </Patch>
+            <Patch Id="OI7QbeRy3UWN8BwlXlACvX" Name="ConstrainTypes">
+              <Pin Id="Dxel8blBpVqMdbLaCwYGEh" MergeId="1433259" Name="Type" Kind="InputPin" />
+            </Patch>
+            <Link Id="UUc5oNPMDDXPAEx9PF4wO3" Ids="Dxel8blBpVqMdbLaCwYGEh,Vh9GPuEpxSyP0AQdxqvyvk" IsHidden="true" />
+            <Link Id="IapAaComHKpPB16VJA5jKD" Ids="Vh9GPuEpxSyP0AQdxqvyvk,RRBgFUcJEtePwgeTiuerux" />
+            <Link Id="C2qPGYDW3QIMRVGemnVW7o" Ids="RIDLhfKJPopNT6koTcm6tS,CyFuXIKmUseMmddO5VvtMQ" IsHidden="true" />
+            <Slot Id="NhsaUs14YovMYoQlkQyZXv" Name="Mutable Particles" />
+            <Link Id="Jei2QaEU9k1P3q4VXLXTf2" Ids="Effe9GbLR2RNbpVYjbAgV8,UcC0ftEoZ0sLLLWL3dnLK5" />
+            <Link Id="TdLsR1eturIN2CTyZcYpYy" Ids="H2UkJC6bXp1QVsTddrw0Ok,F6lnV4tdCz8QXre8JDqC3h" />
+            <Link Id="PCAXIXwT9R0LxMGGf8anz4" Ids="CyFuXIKmUseMmddO5VvtMQ,NnR6asMOOb6Nc64tO9JkJT" />
+            <Link Id="CMRwMm2WnwdPy29whH1wwe" Ids="G1ck9c1DGd5QdiLmjJWBjz,PtdWQYLwSYEOa7HGN68qo8" />
+            <Slot Id="Svbpa7UoqMYQN8KKqSkZzs" Name="Particle Model">
+              <p:TypeAnnotation p:Type="TypeReference">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="Particle" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Slot>
+            <Link Id="Dnjs2DDzghTNpGmUuBRBM6" Ids="FYMOyvQgUNxQGUJkb85unA,CeRWHFPzIfoNFtr07L2KdR" IsHidden="true" />
+            <Link Id="ODygw6lw1QBQTHD5XFHYsL" Ids="RXVX2VpifUPQPAUo7HBEH6,Igg3RUUvTYdMw2rCfbmiao" />
+            <Link Id="CkfKnq7wxLnMLhTF2rZDHo" Ids="PmMRa3CfrWBPFfufMFalMo,GGhJHH3zKgkLHKbmwCGuhj" />
+            <Link Id="CXwlPCAOqY4QZYTfv7NsEW" Ids="LzmbfHO7tdrPA5YakEkSoQ,RHDGCyZjOeNQdqxoP5ydnD" />
+            <Link Id="IeL4k7W5ejXN9mMc15itfr" Ids="EXKhOX5cYAZL87J98OmNTZ,D1IlrLHI3imP3gebdQdMJT" />
+            <Link Id="STvQXKY0SbdPutsfySGFK1" Ids="OHGRJlWxQU0Lmj39YIOry3,NmKAbRwZaQgPgu6IcOweIb" />
+            <Link Id="OchDMavnABKMtonl3II8jq" Ids="BRrQPelUQeVMSQQjARRIR5,ETZWQsHg8N6NVhjmRIVKfP" IsHidden="true" />
+            <Link Id="UHNo5fTBH0LLDs0pkVja8N" Ids="ETZWQsHg8N6NVhjmRIVKfP,B3bDtgoWYR9PkjeBfwEBxv" />
+            <Slot Id="NkPAWNC4LT6NbZDiW4I95L" Name="Particle Models" />
+            <ProcessDefinition Id="SG6doSvYjZ6QLpdEIO8Z3q" HasStateOut="true">
+              <Fragment Id="IHzjTYW4pDNNODioprEVO0" Patch="DKyt6WgOCzQPPj48WsiUvO" Enabled="true" />
+              <Fragment Id="UmsvkW2wrUnM3Q3oDZbYOH" Patch="J5PMnQijglNLuw7cKYGYz4" Enabled="true" />
+              <Fragment Id="P0iDcuNVGeKOdpOhfzLUhU" Patch="LwmOAxhhl06Me0DgDNDBBZ" />
+              <Fragment Id="Rkx17z6yXUePCW3BIqd5KE" Patch="OI7QbeRy3UWN8BwlXlACvX" />
+            </ProcessDefinition>
+            <Link Id="QpJp9vUzwtdOCpaZ07cyDQ" Ids="CeRWHFPzIfoNFtr07L2KdR,ChR97uvLiPGPjU5GFrzhPv" />
+            <Link Id="Oi6LJx5lPY7NrcciF7h3DY" Ids="K3cCdnaNHbENIzU718lVkd,H3Kw9XiNDdWOSh0kz3dNUw" />
+            <Link Id="Op7mcjSHZu4LGggApZmJPi" Ids="NnR6asMOOb6Nc64tO9JkJT,AaFQEuXkNfCOH8Tgpxali8" />
+            <Link Id="ElmrlxVSIDMNYnDUNojUBk" Ids="JY2AMIlt5jIMZ6T4XF57m1,R6oKSzcW4AyPgzKjKFNMjl" />
+            <Link Id="Bo6sW6yCgOWQA8b2W6AUdk" Ids="H3Kw9XiNDdWOSh0kz3dNUw,VyGpMOS4Zb5LUTV84JnKeG" />
+            <Link Id="L9tH8IngQ6IPgdKlx34Zek" Ids="VyGpMOS4Zb5LUTV84JnKeG,En1VKh7J9lROYiSCtUoFBP" />
+          </Patch>
+        </Node>
       </Canvas>
       <Canvas Id="HAXbCGVLSTyLXkXJ6ifZTr" Name="Integrator" Position="213,286">
         <!--
@@ -19331,4 +19548,5 @@
   <NugetDependency Id="K0QjwLMNSnaOS5GtdyPhig" Location="VL.Stride.Runtime" Version="2025.7.0-0153-g18e28d23cd" />
   <PlatformDependency Id="GRXu27Txyj9PBAL6Go7jgf" Location="C:/Program Files/vvvv/vvvv_gamma_6.7-0017-g37eab1195d/packs/dependencies/Stride.Input.dll" />
   <PlatformDependency Id="SxL1a0xcrH7PAHyvQbfAKf" Location="Stride.Input.dll" />
+  <NugetDependency Id="ISthSdqzUCNLNqiHd7uNeX" Location="VL.Animation.ParticleSystem" Version="0.0.0" />
 </Document>
