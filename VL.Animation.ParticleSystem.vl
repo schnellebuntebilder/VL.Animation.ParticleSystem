@@ -1196,18 +1196,6 @@
               </Node>
               <ControlPoint Id="DipNwhvIPMOONBws2zj2sL" Bounds="1244,370" />
               <Pad Id="UXiGVbgCMZ6QL2UBrEzqIi" SlotId="IBd24zMo4iJNQYrNI3d6Dk" Bounds="1224,369" />
-              <Pad Id="TPi7HgPTFfcNgDj5RJqBQO" SlotId="Qpqs2FtrsiCPi86uhCjN5O" Bounds="2173,250" />
-              <ControlPoint Id="RgqIq9hlBnOLGUPRDtxW6k" Bounds="2173,307" />
-              <ControlPoint Id="TW80fA9ZhhFLZ912v5E0Pw" Bounds="2265,312" />
-              <ControlPoint Id="NjUCOsJcpUjMQW7fLE2O2S" Bounds="2173,192" />
-              <Pad Id="FStKcBmFUDlLjBhxt0Euu6" Comment="Is Dragged" Bounds="2254,194,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-                </p:TypeAnnotation>
-                <p:ValueBoxSettings>
-                  <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-                </p:ValueBoxSettings>
-              </Pad>
               <ControlPoint Id="GkWpUUKKcbCMKSFOGSYTqz" Bounds="1224,89" />
               <Pad Id="F13XEcajSKSOtX7EiO4ArM" SlotId="DLiNPeGWdXQOFHfZCpT1My" Bounds="347,-77" />
               <Pad Id="PMeZhl9a6d6NXMWtWqmnKO" SlotId="DLiNPeGWdXQOFHfZCpT1My" Bounds="926,144" />
@@ -1938,8 +1926,6 @@
               <Fragment Id="H7xG5nD2dUVLku05jd5aeM" Patch="MSBHtAT7e8uPU1YzeALrWM" />
               <Fragment Id="OqO7ipCjlLnOZ3KdCGxNVJ" Patch="VAMaTpU1IIDQLVBUUvgOHH" Enabled="true" />
               <Fragment Id="TrxPC8VJ6LpOuhoV7uvLfF" Patch="FGzBsFI2KvOQbG6ixDfYx6" Enabled="true" />
-              <Fragment Id="NVQagAkXxxcOHdC9M0JviE" Patch="U6XMHCMLY5sQdEVYiLSEAS" />
-              <Fragment Id="PXURJ7aQ0UiQJFPs7zx2Ij" Patch="OHScBUpZzcoOCGKtV6MlqW" />
               <Fragment Id="IgnAWEWBsRdL9glsfaDBgp" Patch="PTZef8BkdTQPuvV1YoN4cG" />
               <Fragment Id="TzpCY5gw1IrMGcRQoVNu07" Patch="LuAyaQmUDtWObcy2OFpuii" />
               <Fragment Id="KDGEwmwWDsBMcOb311rOsf" Patch="Puc1YlLZS6rOaJSKmjn13K" />
@@ -1954,7 +1940,7 @@
             <Link Id="Nn1PNkeQpUqMty9uFe0NlF" Ids="L2vQdK1ydMrMvekT39x5Xo,DFzdY0jncYMOsc8T8AlXVE" IsHidden="true" />
             <Link Id="JxIOANoGHvfMUBIoQZK06a" Ids="KbLhGRvYi0UOnD6C7eseOl,BeCJGavucvxMF5AJXMFgCK" />
             <Link Id="TRHGJzUIlorPexbNcaJyjH" Ids="BeCJGavucvxMF5AJXMFgCK,VmNKNHR3eARPyI3u0iW7aE" IsHidden="true" />
-            <Patch Id="AohqqBQWAGjLgyUdvURGYK" Name="Join" ParticipatingElements="H9hbS0Kxtg1Liln4KQCkpj,RrO6AKPQYTkOZPdrgMDgJb" ManuallySortedPins="true">
+            <Patch Id="AohqqBQWAGjLgyUdvURGYK" Name="Join" ParticipatingElements="H9hbS0Kxtg1Liln4KQCkpj" ManuallySortedPins="true">
               <Pin Id="CMi5qMWidMZOxYiBzEeeNi" Name="Pos" Kind="InputPin" />
               <Pin Id="L2vQdK1ydMrMvekT39x5Xo" Name="Vel" Kind="InputPin" />
               <Pin Id="EqXWyu2H4WlQJ0myiNL5T6" Name="Acc" Kind="InputPin" />
@@ -2007,7 +1993,6 @@
               <Pin Id="ElM1DvfI4u3Lc0wty7bnqn" Name="Is Alive" Kind="OutputPin" />
               <Pin Id="EQmsppvJfMVNqU1oYsphJ8" Name="Color" Kind="OutputPin" />
               <Pin Id="AwX8lIttC8QLdxLy4OkMnS" Name="Tag" Kind="OutputPin" />
-              <Pin Id="LEVzvwWyIZMMwB4w3jeuuz" Name="Is Dragged" Kind="OutputPin" />
             </Patch>
             <Link Id="GLBtp8zYOBhP8qZdluy898" Ids="KBVZXOogQMeOU3g7QcZzyq,JTqoUpodjBKMWtmo6ke12d" />
             <Link Id="RZaZwpYFSqWOA7978UAgaU" Ids="JTqoUpodjBKMWtmo6ke12d,B3kUzsrGGB1OgNybtwcBum" IsHidden="true" />
@@ -2308,24 +2293,6 @@
             <Link Id="SwAGm0xckvmN1JGq6bV9Ba" Ids="UXiGVbgCMZ6QL2UBrEzqIi,P9O7jpb7SlUPdRTfX3nnwk" />
             <Link Id="RTRNrsJ15f0MMIl0ujsOWX" Ids="FVhwyD7NtZaPzI3AJYtw9s,DipNwhvIPMOONBws2zj2sL" IsHidden="true" />
             <Link Id="MpjADUNeEAfLkJiMdw6VuJ" Ids="AZLaonkOdksP4KW2rfO6tM,RbNKWnFPM4VPVKfM5fAbTa" />
-            <Slot Id="Qpqs2FtrsiCPi86uhCjN5O" Name="Is Dragged">
-              <p:TypeAnnotation p:Type="TypeReference">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Slot>
-            <Link Id="Q1497AeLIR6LvSrLabhSGQ" Ids="TPi7HgPTFfcNgDj5RJqBQO,RgqIq9hlBnOLGUPRDtxW6k" />
-            <Link Id="EgoJiSsSUxkMR8cTbFyOwv" Ids="RgqIq9hlBnOLGUPRDtxW6k,LEVzvwWyIZMMwB4w3jeuuz" IsHidden="true" />
-            <Link Id="K5k9AotQRdzMecynesOqRR" Ids="TPi7HgPTFfcNgDj5RJqBQO,TW80fA9ZhhFLZ912v5E0Pw" />
-            <Link Id="FjiNRkRZyYmPyMOEuqXj8W" Ids="TW80fA9ZhhFLZ912v5E0Pw,UljQnksru1TOEV8UPs3tKA" IsHidden="true" />
-            <Patch Id="U6XMHCMLY5sQdEVYiLSEAS" Name="IsDragged">
-              <Pin Id="UljQnksru1TOEV8UPs3tKA" Name="Is Dragged" Kind="OutputPin" />
-            </Patch>
-            <Link Id="CZcNCVQLSQTOMEU3omdCma" Ids="NjUCOsJcpUjMQW7fLE2O2S,TPi7HgPTFfcNgDj5RJqBQO" />
-            <Link Id="Et1BuamZOTlMBJAEekSyb7" Ids="EfiNOWxT24rLpiNhejBm89,NjUCOsJcpUjMQW7fLE2O2S" IsHidden="true" />
-            <Patch Id="OHScBUpZzcoOCGKtV6MlqW" Name="SetIsDragged">
-              <Pin Id="EfiNOWxT24rLpiNhejBm89" Name="Is Dragged" Kind="InputPin" />
-            </Patch>
-            <Link Id="RrO6AKPQYTkOZPdrgMDgJb" Ids="FStKcBmFUDlLjBhxt0Euu6,TPi7HgPTFfcNgDj5RJqBQO" />
             <Link Id="L5sKKv6WLOgNUvPkZAxosC" Ids="GkWpUUKKcbCMKSFOGSYTqz,RFOEfOQFOqKP3NyGmhsaIP" />
             <Patch Id="PTZef8BkdTQPuvV1YoN4cG" Name="SetRadius">
               <Pin Id="RgjUNtKW3UFPJPuWPWJRzP" Name="Radius" Kind="InputPin" />
@@ -3308,7 +3275,6 @@
               <Pin Id="JnISXvpLlnoP8KYsXX04m4" Name="Is Alive" Kind="OutputPin" />
               <Pin Id="HSbjkUBcHD7PfTAnv03jnx" Name="Color" Kind="OutputPin" />
               <Pin Id="FgqCvagwtKoPf2tukKD5cn" Name="Tag" Kind="OutputPin" />
-              <Pin Id="Anih9YNLhvlLcdb4e2d8kr" Name="Is Dragged" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="EpfDwpI8DVfNHPpmMVSVOU" Bounds="1231,259" />
             <Link Id="Oni4iJYQz6XMRF2hxhDMbF" Ids="EpfDwpI8DVfNHPpmMVSVOU,KPnet4QN3KrPW6gxOHe1ul" />
@@ -3577,7 +3543,6 @@
                 <Pin Id="RZUzqmLWQb5Nr2GaBwPNJF" Name="Is Alive" Kind="OutputPin" />
                 <Pin Id="P5R3PsNlCYPLGHbLu8Myv4" Name="Color" Kind="OutputPin" />
                 <Pin Id="IyUo1GTnkJZMSLxS3NkSM3" Name="Tag" Kind="OutputPin" />
-                <Pin Id="TDaE7pylPzhP6K8leYG7QI" Name="Is Dragged" Kind="OutputPin" />
               </Node>
               <Pad Id="PoUwHdjTpQKPqbkKRnQkRh" SlotId="QxEyI65HaTvNyJLhRWIc4E" Bounds="238,878" />
               <Pad Id="Fsj6KCJFzDdMBL1PW2RZ3b" SlotId="O4CuF8MPggEOAfkJMbN5yq" Bounds="461,878" />
@@ -9670,7 +9635,6 @@
                         <Pin Id="BzWgqH3yLz8N1hNpyXvKZi" Name="Is Alive" Kind="OutputPin" />
                         <Pin Id="Q4JJTNqYQzmNCv3u2wITIe" Name="Color" Kind="OutputPin" />
                         <Pin Id="Av3w0cflcKcMQptjWoFiIa" Name="Tag" Kind="OutputPin" />
-                        <Pin Id="NYMMteHpKWgPQC3eEROJFc" Name="Is Dragged" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="445,536,270,164" Id="Dyusl1sCUbWOpD320IXszI">
                         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
@@ -9938,7 +9902,6 @@
                         <Pin Id="NFibRQZiCc3Pm4kcsgYhzb" Name="Is Alive" Kind="OutputPin" />
                         <Pin Id="GskpsN55DfQLo24c3rcblq" Name="Color" Kind="OutputPin" />
                         <Pin Id="ErxyJvtlf88Ouilgz0WrNW" Name="Tag" Kind="OutputPin" />
-                        <Pin Id="QpvUvFaZNMwP2eyPnLEY8k" Name="Is Dragged" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="370,528,270,164" Id="JRVM8CeyoKqPQrE5Ypq052">
                         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
