@@ -1904,6 +1904,7 @@
               </Node>
               <ControlPoint Id="RSiHliJzDgJQHd7F5DtXHt" Bounds="124,270" />
               <ControlPoint Id="MVWcp33kfMzPphPzpRJrT4" Bounds="161,270" />
+              <ControlPoint Id="AuXdRMuJZlQNKrXlNVQ5Tm" Bounds="1155,160" />
             </Canvas>
             <Patch Id="LCsZwALoS6FMci6dWnyRPS" Name="Create" ParticipatingElements="FuJP7x5GHXXN9jiA27iQ3I">
               <Pin Id="Imt2Fn0DJ4GPpizTXuG4ID" Name="Id" Kind="OutputPin" />
@@ -1954,6 +1955,7 @@
               <Fragment Id="FY9I32d7T5wOOX1xSWx1Fr" Patch="GcnyWCfl5JrOhqtvLHCJiM" />
               <Fragment Id="Sa4JgjSptwALLpuCopYEOB" Patch="TtNvnhixygKMFyBrsdJek2" />
               <Fragment Id="GDkfUd8kv55QVMcw1RkCyD" Patch="PehMzz5zuZrLPoSTTihRj4" />
+              <Fragment Id="AVqRbYuqcAPOnYnvaATcHL" Patch="HqVUV0hsAw2MmXG03SzaXp" />
             </ProcessDefinition>
             <Slot Id="SRb8ORmkKWyOpqSZRXCAzw" Name="Pos" />
             <Link Id="O2uw34EH4TFObUUuiT6cIo" Ids="CaRhetLt1wrP4vAGem1xki,KBVZXOogQMeOU3g7QcZzyq" />
@@ -2392,6 +2394,11 @@
             </Patch>
             <Link Id="JzDPAraOdfDNnJgXKcGSaI" Ids="MVWcp33kfMzPphPzpRJrT4,AuJULScG9yiLrILQkEv9NG" IsHidden="true" />
             <Link Id="IAIbDcnwPmiLpzmzepeewu" Ids="RcuIMjvPqnPMwtOIkiFqEu,MVWcp33kfMzPphPzpRJrT4" />
+            <Link Id="MAADwvWnD7qQQ87aFp8cRi" Ids="AuXdRMuJZlQNKrXlNVQ5Tm,P0EEsprOQtFOewszCODda1" />
+            <Link Id="DbEE7u99NAkOTbNybSl796" Ids="QQxwRWZHeUaPbXXI9faSEc,AuXdRMuJZlQNKrXlNVQ5Tm" IsHidden="true" />
+            <Patch Id="HqVUV0hsAw2MmXG03SzaXp" Name="SetMass">
+              <Pin Id="QQxwRWZHeUaPbXXI9faSEc" Name="Mass" Kind="InputPin" />
+            </Patch>
           </Patch>
         </Node>
         <!--
