@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:p="property" xmlns:r="reflection" Id="NSHn5RAYWEfOnWuKTd4qzX" LanguageVersion="2025.7.0-0153-g18e28d23cd" Version="0.128">
   <NugetDependency Id="B6zchGM9hB1OA5EW4Z34wy" Location="VL.CoreLib" Version="2025.7.0-0153-g18e28d23cd" />
   <Patch Id="LQ9BabjDMqtPrFYKYbcTgS">
@@ -18824,28 +18824,6 @@
         </ProcessDefinition>
       </Patch>
     </Node>
-    <Pin Id="Vypq0aKUx0sMxxnKtgEklr" Name="tStep" Kind="InputPin" DefaultValue="0.01">
-      <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-        <Choice Kind="TypeFlag" Name="Float32" />
-      </p:TypeAnnotation>
-    </Pin>
-    <Pin Id="R0uvQXWZAtoNJ1PlEuw3At" Name="Input" Kind="InputPin" Bounds="526,472" />
-    <Pin Id="UV6hcRlYWlJQELhI6dcbvB" Name="PSystem Context" Kind="InputPin">
-      <p:TypeAnnotation>
-        <Choice Kind="TypeFlag" Name="PSystemContext" />
-      </p:TypeAnnotation>
-    </Pin>
-    <Pin Id="Fh1FBuLtbv4Po6KLAut3jH" Name="Particles" Kind="InputPin">
-      <p:TypeAnnotation>
-        <Choice Kind="TypeFlag" Name="SpreadBuilder" />
-        <p:TypeArguments>
-          <TypeReference>
-            <Choice Kind="TypeFlag" Name="Particle" />
-          </TypeReference>
-        </p:TypeArguments>
-      </p:TypeAnnotation>
-    </Pin>
-    <Pin Id="OEjmQvFowaFL5zij9Mhyaz" Name="Output" Kind="OutputPin" Bounds="555,646" />
   </Patch>
   <NugetDependency Id="JcpLMSNLd2GOIdDQhwtVca" Location="VL.Skia" Version="2025.7.0-0153-g18e28d23cd" />
   <ProjectDependency Id="K4Gu8RUWMG1MiyOd3fYB1e" Location="./src/VL.Animation.ParticleSystem/VL.Animation.ParticleSystem.csproj" />
